@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>LangBridge</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="lang">LANG</span><span class="bridge">BRIDGE</span>
+        </a>
+        <div class="menu-container">
+            <ul class="mega-menu">
+                <li class="link">
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <span>Tài liệu</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="en.html">Tiếng Anh</a></li>
+                        <li class="link"><a href="cn.html">Tiếng Trung</a></li>
+                        <li class="link"><a href="jp.html">Tiếng Nhật</a></li>
+                        <li class="link"><a href="kr.html">Tiếng Hàn</a></li>
+                        <li class="link"><a href="fr.html">Tiếng Pháp</a></li>
+                        <li class="link"><a href="gr.html">Tiếng Đức</a></li>
+                    </ul>
+                <li class="link">
+                    <a href="about.html">Giới thiệu</a>
+                </li>
+                <li class="link">
+                    <a href="feedbacks">Góp ý</a>
+                </li>
+                <li class="link">
+                    <a href="qas.html">Q&A</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav__actions">
+            <!-- Donate button -->
+            <i class="ri-coin-line donate-button" id="donate-button"></i>
+            <!-- Search button -->
+            <i class="ri-search-line search-button" id="search-button"></i>
+        </div>
+
+        <div class="buttons">
+            <button class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--==================== DONATE ====================-->
+    <my-donate></my-donate>
+
+    <!--==================== SEARCH ====================-->
+    <my-search></my-search>
+
+    <!--==================== DONATE ====================-->
+    <my-donate></my-donate>
+
+    <!--==================== SEARCH ====================-->
+    <my-search></my-search>
+
+    <!--=============== Q&A ===============-->
+    <section class="faqs">
+        <h2>Câu hỏi thường gặp</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="ri-question-line"></i></div>
+                <div class="question__answer">
+                    <h4>Tôi gặp lỗi khi tải tài liệu, phải làm gì?</h4>
+                    <p> Bạn có thể tải lại sau vài phút hoặc liên hệ với chúng mình qua mục "Góp ý" để được hỗ trợ nhanh nhất.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="ri-question-line"></i></div>
+                <div class="question__answer">
+                    <h4>Tài liệu có được kiểm duyệt nội dung không?</h4>
+                    <p>Tất cả tài liệu tại LangBridge đều được duyệt nội dung kỹ lưỡng trước khi hiển thị trên web.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="ri-question-line"></i></div>
+                <div class="question__answer">
+                    <h4>Có thể đăng tài liệu lên web không?</h4>
+                    <p>Bạn có thể gửi tài liệu qua địa chỉ gmail ở cuối trang web chúng mình sẽ tải lên nếu nội dung phù hợp.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="ri-question-line"></i></div>
+                <div class="question__answer">
+                    <h4>Không thấy tài liệu mình cần thì sao?</h4>
+                    <p>Bạn hãy gửi góp ý nhé, chúng mình sẽ cố gắng tìm và cập nhật sớm nhất có thể.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="ri-question-line"></i></div>
+                <div class="question__answer">
+                    <h4>Tài liệu trên web có cập nhật thường xuyên không?</h4>
+                    <p>Bọn mình luôn cập nhật liên tục để bạn không bỏ lỡ tài liệu hay và mới nhất.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="ri-question-line"></i></div>
+                <div class="question__answer">
+                    <h4>Có thể thêm sách vào danh sách yêu thích không?</h4>
+                    <p> Sắp có nhé! Tính năng này đang nhóm chúng mình được phát triển.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <my-footer></my-footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

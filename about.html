@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>LangBridge</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="lang">LANG</span><span class="bridge">BRIDGE</span>
+        </a>
+        <div class="menu-container">
+            <ul class="mega-menu">
+                <li class="link">
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <span>Tài liệu</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="en.html">Tiếng Anh</a></li>
+                        <li class="link"><a href="cn.html">Tiếng Trung</a></li>
+                        <li class="link"><a href="jp.html">Tiếng Nhật</a></li>
+                        <li class="link"><a href="kr.html">Tiếng Hàn</a></li>
+                        <li class="link"><a href="fr.html">Tiếng Pháp</a></li>
+                        <li class="link"><a href="gr.html">Tiếng Đức</a></li>
+                    </ul>
+                <li class="link">
+                    <a href="about.html">Giới thiệu</a>
+                </li>
+                <li class="link">
+                    <a href="index.html#feedbacks">Góp ý</a>
+                </li>
+                <li class="link">
+                    <a href="qas.html">Q&A</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav__actions">
+            <!-- Donate button -->
+            <i class="ri-coin-line donate-button" id="donate-button"></i>
+            <!-- Search button -->
+            <i class="ri-search-line search-button" id="search-button"></i>
+        </div>
+
+        <div class="buttons">
+            <button class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--==================== DONATE ====================-->
+    <my-donate></my-donate>
+
+    <!--==================== SEARCH ====================-->
+    <my-search></my-search>
+
+    <!--==================== HOME ====================-->
+    <section class="parallaxab"
+        style="background: url('assets/img/ship.png') no-repeat fixed center center; background-size: cover;">
+        <div class="text__ab">
+            <h2>Welcome to<br><span> LangBridge!</span></h2>
+            <p class="subtitle">Hãy cùng tìm hiểu một chút về LangBridge<br>
+                để biết chúng mình là ai và vì sao lại ở đây!
+            </p>
+        </div>
+        <img src="assets/img/wave.png" alt="ani1">
+    </section>
+
+    <!--==================== NHỮNG CON SỐ ẤN TƯỢNG ====================-->
+    <div class="numbers">
+        <div>
+            <div class="number">
+                <h1><span data-count="6">0</span></h1>
+                <h3>Ngôn ngữ</h3>
+            </div>
+
+            <div class="number">
+                <h1><span data-count="700">0</span>+</h1>
+                <h3>Tài liệu</h3>
+            </div>
+
+            <div class="number">
+                <h1><span data-count="10374">0</span>+</h1>
+                <h3>Lượt tải xuống</h3>
+            </div>
+
+            <div class="number">
+                <h1><span data-count="36434">0</span>+</h1>
+                <h3>Lượt truy cập</h3>
+            </div>
+        </div>
+    </div>
+
+    <!--==================== WHO WE ARE ====================-->
+    <section class="whower">
+        <img src="assets/img/bando.png" alt="bando">
+        <div class="text__whower">
+            <h2>Hành trình bắt đầu từ đâu?</h2>
+            <p>LangBridge ra đời từ một nhu cầu đơn giản: tìm tài liệu học ngoại ngữ chất lượng mà không phải tốn hàng
+                giờ tìm kiếm. Là những người từng tự học đủ thứ tiếng – Anh, Trung, Nhật, Hàn, Pháp, Đức – tụi mình hiểu
+                cảm giác lạc lõng giữa vô vàn link mà không biết bắt đầu từ đâu.
+
+                Từ vài file chia sẻ nhỏ lẻ giữa bạn bè, tụi mình quyết định gom lại, sắp xếp tử tế và tạo nên một nơi để
+                mọi người dễ dàng tìm, chia sẻ và học cùng nhau. LangBridge – chiếc cầu nối vững chắc cho bất kỳ ai đang
+                trên hành trình chinh phục ngoại ngữ.
+            </p>
+        </div>
+    </section>
+
+    <!--==================== SỨ MỆNH ====================-->
+    <section class="mission" id="mission"
+        style="background: url('assets/img/6.png') no-repeat; background-size: cover; height: 620px;">
+        <div class="mission__text">
+            <h2>Sứ mệnh</h2>
+            <p class="subtitle">Sứ mệnh của tụi mình là kết nối cộng đồng học ngoại ngữ thông qua một kho tài liệu phong
+                phú, chất lượng và dễ tiếp cận. Tụi mình không chỉ mong bạn tìm được cuốn sách phù hợp, mà còn muốn bạn
+                cảm thấy rằng việc học không còn cô đơn, tài liệu không còn là rào cản. Bởi vì với tụi mình, kiến thức
+                nên được chia sẻ – không giới hạn, không rào cản.
+            </p>
+        </div>
+        </div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <my-footer></my-footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const counters = document.querySelectorAll(".numbers span");
+        const container = document.querySelector(".numbers");
+        let activated = false;
+
+        window.addEventListener("scroll", () => {
+            if (
+                pageYOffset > container.offsetTop - container.offsetHeight - 200 &&
+                activated === false
+            ) {
+                counters.forEach(counter => {
+                    counter.innerText = 0;
+                    let count = 0;
+                    const target = parseInt(counter.dataset.count);
+
+                    function updateCount() {
+                        if (count < target) {
+                            count++;
+                            counter.innerText = count;
+                            setTimeout(updateCount, 10);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    }
+
+                    updateCount();
+                });
+
+                activated = true;
+
+            } else if (
+                (pageYOffset < container.offsetTop - container.offsetHeight - 500 ||
+                    pageYOffset === 0) &&
+                activated === true
+            ) {
+                counters.forEach(counter => {
+                    counter.innerText = 0;
+                });
+                activated = false;
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

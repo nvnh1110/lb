@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>LangBridge</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="lang">LANG</span><span class="bridge">BRIDGE</span>
+        </a>
+        <div class="menu-container">
+            <ul class="mega-menu">
+                <li class="link">
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <span>Tài liệu</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="en.html">Tiếng Anh</a></li>
+                        <li class="link"><a href="cn.html">Tiếng Trung</a></li>
+                        <li class="link"><a href="jp.html">Tiếng Nhật</a></li>
+                        <li class="link"><a href="kr.html">Tiếng Hàn</a></li>
+                        <li class="link"><a href="fr.html">Tiếng Pháp</a></li>
+                        <li class="link"><a href="gr.html">Tiếng Đức</a></li>
+                    </ul>
+                <li class="link">
+                    <a href="about.html">Giới thiệu</a>
+                </li>
+                <li class="link">
+                    <a href="#feedbacks">Góp ý</a>
+                </li>
+                <li class="link">
+                    <a href="qas.html">Q&A</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav__actions">
+            <!-- Donate button -->
+            <i class="ri-coin-line donate-button" id="donate-button"></i>
+            <!-- Search button -->
+            <i class="ri-search-line search-button" id="search-button"></i>
+        </div>
+
+        <div class="buttons">
+            <button class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--==================== DONATE ====================-->
+    <my-donate></my-donate>
+
+    <!--==================== SEARCH ====================-->
+    <my-search></my-search>
+
+    <!--==================== HOME ====================-->
+    <section class="parallax"
+        style="background: url('assets/img/bg.png') no-repeat fixed center center; background-size: cover; height: 100vh;">
+        <img src="assets/img/4.png" alt="ani4">
+        <img src="assets/img/3.png" alt="ani3">
+        <img src="assets/img/1.png" alt="ani1">
+        <div class="text">
+            <h2>The ocean<br><span>is the limit</span></h2>
+            <p class="subtitle">Hãy thả mình vào dòng chảy của ngôn ngữ,<br>
+                để LangBridge đưa lối. Việc học giờ đây không còn áp lực,<br>
+                mà là chuyến khám phá thú vị giữa đại dương tri thức.
+            </p>
+        </div>
+    </section>
+
+    <!--==================== CATEGORIES ====================-->
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1>Categories</h1>
+                <p>
+                    Cùng bắt đầu hành trình học tập ngôn ngữ của bạn với kho tài liệu học tập đa ngôn ngữ được tuyển
+                    chọn kỹ lưỡng của LangBridge. Dù bạn là người mới làm quen hay đã học nâng cao, chúng mình luôn đồng
+                    hành với nguồn tài liệu chất
+                    lượng, dễ hiểu và truyền cảm hứng.
+                </p>
+            </div>
+
+            <div class="categories_right">
+                <a href="en.html" class="category-link">
+                    <article class="category">
+                        <span class="category_icon"><img src="https://flagcdn.com/w80/gb.png" alt="UK Flag" width="40px"
+                                ; height="25px" ;></span>
+                        <h5>Tiếng Anh</h5>
+                        <p>Hơi thở của thời đại, giúp bạn hiểu và được hiểu trong một thế giới không biên giới.</p>
+                    </article>
+                </a>
+
+                <a href="cn.html" class="category-link">
+                    <article class="category">
+                        <span class="category_icon"><img src="https://flagcdn.com/w80/cn.png" alt="China Flag"
+                                width="40px" ; height="25px"></span>
+                        <h5>Tiếng Trung</h5>
+                        <p>Chìa khóa giúp khai phá nền văn hóa lâu đời và thị trường năng động bậc nhất châu Á.</p>
+                    </article>
+                </a>
+
+                <a href="gr.html" class="category-link">
+                    <article class="category">
+                        <span class="category_icon"><img src="https://flagcdn.com/w80/de.png" alt="Germany Flag"
+                                width="40px" ; height="25px"></span>
+                        <h5>Tiếng Đức</h5>
+                        <p>Ngôn ngữ của khoa học và kỹ thuật, giúp bạn tiếp cận nền công nghiệp hàng đầu châu Âu.</p>
+                    </article>
+                </a>
+
+                <a href="jp.html" class="category-link">
+                    <article class="category">
+                        <span class="category_icon"><img src="https://flagcdn.com/w80/jp.png" alt="Japan Flag"
+                                width="40px" ; height="25px"></span>
+                        <h5>Tiếng Nhật</h5>
+                        <p>Cánh cửa mở ra một nền văn hóa tinh tế, sâu sắc, giàu truyền thống và đầy sáng tạo.</p>
+                    </article>
+                </a>
+
+                <a href="kr.html" class="category-link">
+                    <article class="category">
+                        <span class="category_icon"><img src="https://flagcdn.com/w80/kr.png" alt="Korea Flag"
+                                width="40px" ; height="25px"></span>
+                        <h5>Tiếng Hàn</h5>
+                        <p>Giúp bạn hòa nhập vào làn sóng Hallyu đang lan tỏa toàn cầu từ âm nhạc đến ẩm thực.</p>
+                    </article>
+                </a>
+
+                <a href="fr.html" class="category-link">
+                    <article class="category">
+                        <span class="category_icon"><img src="https://flagcdn.com/w80/fr.png" alt="France Flag"
+                                width="40px" ; height="25px"></span>
+                        <h5>Tiếng Pháp</h5>
+                        <p>Thanh âm của tình yêu và sự lãng mạn, mở ra chân trời của văn hóa cổ điển phương Tây.</p>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== FEATURED ====================-->
+    <section class="featured">
+        <h2>Sách nổi bật</h2>
+        <div id="bookList" class="featured__list"></div>
+    </section>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+        <div class="modal-bg" id="modalBg"></div>
+        <div class="popup__content" id="popupContent">
+            <div class="left">
+                <img id="popupImg" src="" alt="Book Cover" />
+            </div>
+            <div class="right">
+                <div class="right__top">
+                    <h2 class="popup__title" id="popupTitle"></h2>
+                    <p id="popupAuthor"></p>
+                    <p id="popupPublisher"></p>
+                    <p id="popupPages"></p>
+                </div>
+                <div class="right__mid">
+                    <a id="downloadBtn" target="_blank"><button><i class="ri-book-line"></i>Tải sách</button></a>
+                    <a id="audioBtn" target="_blank" style="display: none;"><button><i class="ri-volume-up-line"></i>Tải
+                            audio</button></a>
+                </div>
+                <div class="right__bottom">
+                    <p class="popup__description" id="popupDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==================== FEED BACKS ====================-->
+    <section class="feedbacks" id="feedbacks"
+        style="background: url('assets/img/bg.png') no-repeat fixed center center; background-size: cover; height: 550px;">
+        <div class="feedbacks__container">
+            <img src="assets/img/send.png" alt="image" class="feedbacks__bg">
+            <div class="feedbacks__data container grid">
+                <h2 class="feedbacks__title section__title">
+                    Chia sẻ từ bạn đọc
+                </h2>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="feedbacks__form">
+                    <input type="hidden" name="access_key" value="b43d8155-985a-4e45-aa12-bffa3c2b1613">
+                    <input type="email" name="email" placeholder="Gmail" class="contact-inputs" required>
+                    <textarea name="message" required class="feedbacks__input" placeholder="Gửi chia sẻ của bạn tại đây"></textarea>
+                    <button type="send" class="feedbacks__button">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonials__container mySwiper">
+        <h2>Đánh giá</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="assets/img/fb.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>nvnh</h5>
+                </div>
+                <div class="testimonial__body">
+                    <p>Giao diện xịn xò. Lướt đã mắt, học cũng đã luôn</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="assets/img/fb.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>nhp</h5>
+                </div>
+                <div class="testimonial__body">
+                    <p>Thiết kế đẹp, rõ ràng. Mình rất thích phần phân loại theo cấp độ </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="assets/img/fb.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>th</h5>
+                </div>
+                <div class="testimonial__body">
+                    <p>Tài liệu siêu đỉnh, tìm phát có ngay. Đỡ stress hẳn</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="assets/img/fb.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Minh Khôi</h5>
+                </div>
+                <div class="testimonial__body">
+                    <p>Quá cháy!</p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="assets/img/fb.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>James</h5>
+                </div>
+                <div class="testimonial__body">
+                    <p>Awesome for Japanese learners.But an English interface would make it even better!</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!--==================== FOOTER ====================-->
+    <my-footer></my-footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            grabCursor: true,
+
+            // Responsive breakpoints
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                400: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+            }
+        });
+    </script>
+    <script>
+        const bookList = document.getElementById("bookList");
+        const popup = document.getElementById("popup");
+        const popupContent = document.getElementById("popupContent");
+        const modalBg = document.getElementById("modalBg");
+
+        const popupImg = document.getElementById("popupImg");
+        const popupTitle = document.getElementById("popupTitle");
+        const popupAuthor = document.getElementById("popupAuthor");
+        const popupPublisher = document.getElementById("popupPublisher");
+        const popupPages = document.getElementById("popupPages");
+        const popupDescription = document.getElementById("popupDescription");
+
+        const downloadBtn = document.getElementById("downloadBtn");
+        const audioBtn = document.getElementById("audioBtn");
+
+        // Load sách từ JSON
+        fetch("docs/index.json")
+            .then(res => res.json())
+            .then(books => {
+                books.forEach(book => {
+                    const div = document.createElement("div");
+                    div.className = "featured__book";
+                    div.innerHTML = `
+        <img src="${book.cover}" alt="${book.title}">
+        <div class="book__title">${book.title}</div>
+      `;
+
+                    div.addEventListener("click", () => {
+                        popupImg.src = book.cover;
+                        popupTitle.textContent = book.title;
+                        popupAuthor.textContent = "Tác giả: " + book.author;
+                        popupPublisher.textContent = "NXB: " + book.publisher;
+                        popupPages.textContent = "Số trang: " + book.pages;
+                        popupDescription.textContent = book.description;
+
+                        downloadBtn.href = book.download;
+                        audioBtn.href = book.audio || "#";
+                        audioBtn.style.display = book.audio ? "inline-block" : "none";
+
+                        // Show popup
+                        popup.classList.add("open");
+                        popupContent.classList.remove("zoom-out");
+                        popupContent.classList.add("zoom-in");
+                    });
+
+                    bookList.appendChild(div);
+                });
+            });
+
+        // Đóng popup khi click nền mờ
+        modalBg.addEventListener("click", () => {
+            popupContent.classList.remove("zoom-in");
+            popupContent.classList.add("zoom-out");
+            setTimeout(() => {
+                popup.classList.remove("open");
+            }, 300);
+        });
+    </script>
+
+</html>

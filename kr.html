@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>LangBridge</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <nav class="navbar">
+        <a href="home.html" class="logo">
+            <span class="lang">LANG</span><span class="bridge">BRIDGE</span>
+        </a>
+        <div class="menu-container">
+            <ul class="mega-menu">
+                <li class="link">
+                    <a href="#">Tất cả</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <span>Giáo trình</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="#">Giáo trình chuẩn</a></li>
+                        <li class="link"><a href="#">Giáo trình Bonya</a></li>
+                        <li class="link"><a href="#">Giáo trình Mustong</a></li>
+                        <li class="link"><a href="#">Giáo trình Hán ngữ</a></li>
+                        <li class="link"><a href="#">SGK tiếng Trung (VN)</a></li>
+                        <li class="link"><a href="#">SGK tiếng Trung (TQ)</a></li>
+                        <li class="link"><a href="#">Khác</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <div>
+                        <span>Chuyên ngành</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="#">Biên phiên dịch</a></li>
+                        <li class="link"><a href="#">Thương mại</a></li>
+                        <li class="link"><a href="#">Khoa học kỹ thuật</a></li>
+                        <li class="link"><a href="#">Xã hội nhân văn</a></li>
+                        <li class="link"><a href="#">Y - Sinh</a></li>
+                        <li class="link"><a href="#">Ngôn ngữ - Văn hóa</a></li>
+                        <li class="link"><a href="#">Du lịch - Dịch vụ</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <div>
+                        <span>Cấp độ</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="#">HSK 1-2</a></li>
+                        <li class="link"><a href="#">HSK 3</a></li>
+                        <li class="link"><a href="#">HSK 4</a></li>
+                        <li class="link"><a href="#">HSK 5</a></li>
+                        <li class="link"><a href="#">HSK 6</a></li>
+                        <li class="link"><a href="#">HSK 7-9</a></li>
+                </li>
+            </ul>
+            </li>
+
+            <li class="dropdown">
+                <div>
+                    <span>HSKK</span>
+                    <i class="ri-arrow-drop-down-line"></i>
+                </div>
+                <ul class="menu">
+                    <li class="link"><a href="#">Sơ cấp</a></li>
+                    <li class="link"><a href="#">Trung cấp</a></li>
+                    <li class="link"><a href="#">Cao cấp</a></li>
+            </li>
+            </ul>
+            </li>
+
+            <li class="link">
+                <a href="#">Học bổng</a>
+            </li>
+            </ul>
+        </div>
+
+        <div class="nav__actions">
+            <!-- Donate button -->
+            <i class="ri-coin-line donate-button" id="donate-button"></i>
+            <!-- Search button -->
+            <i class="ri-search-line search-button" id="search-button"></i>
+        </div>
+
+        <div class="buttons">
+            <button class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--==================== DONATE ====================-->
+    <my-donate></my-donate>
+
+    <!--==================== SEARCH ====================-->
+    <my-search></my-search>
+
+    <!--==================== HOME ====================-->
+    <section class="tailieu__home"
+        style="background: url('assets/img/12.png') no-repeat center center; background-size: cover;   display: flex;">
+        <h2>환영합니다<br>한국어에</h2>
+    </section>
+
+    <!--==================== FEATURED ====================-->
+
+
+    <!--==================== FOOTER ====================-->
+    <my-footer></my-footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const bookList = document.getElementById("bookList");
+        const popup = document.getElementById("popup");
+        const popupContent = document.getElementById("popupContent");
+        const modalBg = document.getElementById("modalBg");
+
+        const popupImg = document.getElementById("popupImg");
+        const popupTitle = document.getElementById("popupTitle");
+        const popupAuthor = document.getElementById("popupAuthor");
+        const popupPublisher = document.getElementById("popupPublisher");
+        const popupPages = document.getElementById("popupPages");
+        const popupDescription = document.getElementById("popupDescription");
+
+        const downloadBtn = document.getElementById("downloadBtn");
+        const audioBtn = document.getElementById("audioBtn");
+
+        // Load sách từ JSON
+        fetch("docs/kr.json")
+            .then(res => res.json())
+            .then(books => {
+                books.forEach(book => {
+                    const div = document.createElement("div");
+                    div.className = "featured__book";
+                    div.innerHTML = `
+        <img src="${book.cover}" alt="${book.title}">
+        <div class="book__title">${book.title}</div>
+      `;
+
+                    div.addEventListener("click", () => {
+                        popupImg.src = book.cover;
+                        popupTitle.textContent = book.title;
+                        popupAuthor.textContent = "Tác giả: " + book.author;
+                        popupPublisher.textContent = "NXB: " + book.publisher;
+                        popupPages.textContent = "Số trang: " + book.pages;
+                        popupDescription.textContent = book.description;
+
+                        downloadBtn.href = book.download;
+                        audioBtn.href = book.audio || "#";
+                        audioBtn.style.display = book.audio ? "inline-block" : "none";
+
+                        // Show popup
+                        popup.classList.add("open");
+                        popupContent.classList.remove("zoom-out");
+                        popupContent.classList.add("zoom-in");
+                    });
+
+                    bookList.appendChild(div);
+                });
+            });
+
+        // Đóng popup khi click nền mờ
+        modalBg.addEventListener("click", () => {
+            popupContent.classList.remove("zoom-in");
+            popupContent.classList.add("zoom-out");
+            setTimeout(() => {
+                popup.classList.remove("open");
+            }, 300);
+        });
+    </script>
+</body>
+
+</html>

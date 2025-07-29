@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>LangBridge</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        h2 {
+            color: #3383e2;
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+
+        .book-card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            gap: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+            margin: 2rem;
+        }
+
+        .book-card:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-card img {
+            width: 120px;
+            height: 170px;
+            /* Tỷ lệ gần đúng A4 */
+            object-fit: cover;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        .book-card h3 {
+            margin: 0 0 0.5rem;
+            font-size: 1.3rem;
+            color: #222;
+        }
+
+        .book-card p {
+            margin: 0.3rem 0;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .book-card p strong {
+            color: #444;
+        }
+
+        .download-btn {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .download-btn a {
+            background-color: #3383e2;
+            color: #fff;
+            padding: 0.5rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn a:hover {
+            background-color: #226ac1;
+        }
+
+        #results p {
+            font-style: italic;
+            color: #666;
+        }
+
+        #results {
+            margin-bottom: 10.5rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="lang">LANG</span><span class="bridge">BRIDGE</span>
+        </a>
+        <div class="menu-container">
+            <ul class="mega-menu">
+                <li class="link">
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <span>Tài liệu</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="en.html">Tiếng Anh</a></li>
+                        <li class="link"><a href="cn.html">Tiếng Trung</a></li>
+                        <li class="link"><a href="jp.html">Tiếng Nhật</a></li>
+                        <li class="link"><a href="kr.html">Tiếng Hàn</a></li>
+                        <li class="link"><a href="fr.html">Tiếng Pháp</a></li>
+                        <li class="link"><a href="gr.html">Tiếng Đức</a></li>
+                    </ul>
+                <li class="link">
+                    <a href="about.html">Giới thiệu</a>
+                </li>
+                <li class="link">
+                    <a href="feedbacks">Góp ý</a>
+                </li>
+                <li class="link">
+                    <a href="qas.html">Q&A</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav__actions">
+            <!-- Donate button -->
+            <i class="ri-coin-line donate-button" id="donate-button"></i>
+            <!-- Search button -->
+            <i class="ri-search-line search-button" id="search-button"></i>
+        </div>
+
+        <div class="buttons">
+            <button class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--==================== DONATE ====================-->
+    <my-donate></my-donate>
+
+    <!--==================== SEARCH ====================-->
+    <my-search></my-search>
+
+    <h2>Kết quả cho từ khóa: "<span id="keyword"></span>"</h2>
+    <div id="results">Đang tải dữ liệu...</div>
+
+    <!--==================== FOOTER ====================-->
+    <my-footer></my-footer>
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const resultBox = document.getElementById("results");
+        const queryText = new URLSearchParams(location.search).get("query")?.trim().toLowerCase() || "";
+        document.getElementById("keyword").textContent = decodeURIComponent(queryText);
+
+        const dataFiles = Array.from({ length: 6 }, (_, i) => `docs/data${i + 1}.json`); // đảm bảo đúng đường dẫn
+
+        Promise.all(dataFiles.map(file =>
+            fetch(file)
+                .then(res => {
+                    if (!res.ok) throw new Error(`Lỗi khi tải ${file}`);
+                    return res.json();
+                })
+        ))
+            .then(allData => {
+                const allBooks = allData.flat();
+
+                const filtered = allBooks.filter(book =>
+                    book.title.toLowerCase().includes(queryText) ||
+                    book.description.toLowerCase().includes(queryText) ||
+                    (book.hashtags?.some(tag => tag.toLowerCase().includes(queryText)))
+                );
+
+                if (filtered.length === 0) {
+                    resultBox.innerHTML = "<p>Không tìm thấy kết quả nào.</p>";
+                } else {
+                    resultBox.innerHTML = filtered.map(book => `
+          <div class="book-card">
+            <img src="${book.cover}" alt="Bìa sách">
+            <div>
+              <h3>${book.title}</h3>
+              <p><strong>Tác giả:</strong> ${book.author}</p>
+              <p><strong>Số trang:</strong> ${book.pages}</p>
+              <p>${book.description}</p>
+              <p><strong>Hashtags:</strong> #${book.hashtags?.join(" #")}</p>
+            <div class="download-btn">
+              <a href="${book.download}" class="btn-download" target="_blank">Tải sách</a>
+              <a href="${book.audio}" class="btn-audio" target="_blank">Tải audio</a>
+            </div>
+            </div>
+          </div>
+        `).join("");
+                }
+            })
+            .catch(err => {
+                console.error("Lỗi khi tải dữ liệu:", err);
+                resultBox.innerHTML = "<p>Lỗi khi tải dữ liệu. Vui lòng kiểm tra đường dẫn hoặc chạy trên server.</p>";
+            });
+    </script>
+</body>
+
+</html>

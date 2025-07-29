@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>LangBridge</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="lang">LANG</span><span class="bridge">BRIDGE</span>
+        </a>
+        <div class="menu-container">
+            <ul class="mega-menu">
+                <li class="link">
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li class="link">
+                    <a href="#">Tất cả</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <span>Giáo trình</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="#" data-hashtag="chuan">Giáo trình chuẩn</a></li>
+                        <li class="link"><a href="#" data-hashtag="bonya">Giáo trình Bonya</a></li>
+                        <li class="link"><a href="#" data-hashtag="msutong">Giáo trình Msutong</a></li>
+                        <li class="link"><a href="#" data-hashtag="hanngu">Giáo trình Hán ngữ</a></li>
+                        <li class="link"><a href="#" data-hashtag="sgk-tiengtrung-vn">SGK tiếng Trung (VN)</a></li>
+                        <li class="link"><a href="#" data-hashtag="gtttkhac">Khác</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <div>
+                        <span>Chuyên ngành</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="#" data-hashtag="bienphiendich">Biên phiên dịch</a></li>
+                        <li class="link"><a href="#" data-hashtag="thuongmai">Thương mại</a></li>
+                        <li class="link"><a href="#" data-hashtag="khoahockythuat">Khoa học kỹ thuật</a></li>
+                        <li class="link"><a href="#" data-hashtag="xahoinhanvan">Xã hội nhân văn</a></li>
+                        <li class="link"><a href="#" data-hashtag="ysinh">Y - Sinh</a></li>
+                        <li class="link"><a href="#" data-hashtag="ngonngu">Ngôn ngữ - Văn hóa</a></li>
+                        <li class="link"><a href="#" data-hashtag="dulich">Du lịch - Dịch vụ</a></li>
+                        <li class="link"><a href="#" data-hashtag="cnttkhac">Khác</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <div>
+                        <span>Cấp độ</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="#" data-hashtag="hsk1-2">HSK 1-2</a></li>
+                        <li class="link"><a href="#" data-hashtag="hsk3">HSK 3</a></li>
+                        <li class="link"><a href="#" data-hashtag="hsk4">HSK 4</a></li>
+                        <li class="link"><a href="#" data-hashtag="hsk5">HSK 5</a></li>
+                        <li class="link"><a href="#" data-hashtag="hsk6">HSK 6</a></li>
+                        <li class="link"><a href="#" data-hashtag="hsk7-9">HSK 7-9</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <div>
+                        <span>HSKK</span>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="link"><a href="#" data-hashtag="hskksocap">Sơ cấp</a></li>
+                        <li class="link"><a href="#" data-hashtag="hskktrungcap">Trung cấp</a></li>
+                        <li class="link"><a href="#" data-hashtag="caocap">Cao cấp</a></li>
+                </li>
+            </ul>
+            </li>
+
+            <li class="link">
+                <a href="#">Học bổng</a>
+            </li>
+            </ul>
+        </div>
+
+        <div class="nav__actions">
+            <!-- Donate button -->
+            <i class="ri-coin-line donate-button" id="donate-button"></i>
+            <!-- Search button -->
+            <i class="ri-search-line search-button" id="search-button"></i>
+        </div>
+
+        <div class="buttons">
+            <button class="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!--==================== DONATE ====================-->
+    <my-donate></my-donate>
+
+    <!--==================== SEARCH ====================-->
+    <my-search></my-search>
+
+    <!--==================== HOME ====================-->
+    <section class="tailieu__home"
+        style="background: url('assets/img/7.png') no-repeat center center; background-size: cover;   display: flex;">
+        <h2>你好！欢迎来到<br>中文小宇宙</h2>
+    </section>
+
+    <!--==================== FEATURED ====================-->
+    <section class="featured">
+        <h2>Sách nổi bật</h2>
+        <div id="bookList" class="featured__list"></div>
+        <div class="pagination">
+            <button id="prevBtn">Previous</button>
+            <span id="pageNumbers"></span>
+            <button id="nextBtn">Next</button>
+        </div>
+    </section>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+        <div class="modal-bg" id="modalBg"></div>
+        <div class="popup__content" id="popupContent">
+            <div class="left">
+                <img id="popupImg" src="" alt="Book Cover" />
+            </div>
+            <div class="right">
+                <div class="right__top">
+                    <h2 class="popup__title" id="popupTitle"></h2>
+                    <p id="popupAuthor"></p>
+                    <p id="popupPublisher"></p>
+                    <p id="popupPages"></p>
+                </div>
+                <div class="right__mid">
+                    <a id="downloadBtn" target="_blank"><button><i class="ri-book-line"></i>Tải sách</button></a>
+                    <a id="audioBtn" target="_blank" style="display: none;"><button><i class="ri-volume-up-line"></i>Tải
+                            audio</button></a>
+                </div>
+                <div class="right__bottom">
+                    <p class="popup__description" id="popupDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==================== FOOTER ====================-->
+    <my-footer></my-footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/main.js"></script>
+
+<script>
+const bookList = document.getElementById("bookList");
+const pageNumbers = document.getElementById("pageNumbers");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+const popup = document.getElementById("popup");
+const popupContent = document.getElementById("popupContent");
+const modalBg = document.getElementById("modalBg");
+
+const popupImg = document.getElementById("popupImg");
+const popupTitle = document.getElementById("popupTitle");
+const popupAuthor = document.getElementById("popupAuthor");
+const popupPublisher = document.getElementById("popupPublisher");
+const popupPages = document.getElementById("popupPages");
+const popupDescription = document.getElementById("popupDescription");
+
+const downloadBtn = document.getElementById("downloadBtn");
+const audioBtn = document.getElementById("audioBtn");
+
+const itemsPerPage = 18;
+let allBooks = [];
+let filteredBooks = [];
+let currentPage = 1;
+
+fetch("docs/data1.json")
+  .then(res => res.json())
+  .then(data => {
+    allBooks = data;
+    filteredBooks = data;
+    updateView();
+  });
+
+function renderBooks(page) {
+  bookList.innerHTML = "";
+  const start = (page - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  const booksToShow = filteredBooks.slice(start, end);
+
+  booksToShow.forEach(book => {
+    const div = document.createElement("div");
+    div.className = "featured__book";
+    div.innerHTML = `
+      <img src="${book.cover}" alt="${book.title}">
+      <div class="book__title">${book.title}</div>
+    `;
+
+    div.addEventListener("click", () => {
+      popupImg.src = book.cover;
+      popupTitle.textContent = book.title;
+      popupAuthor.textContent = "Tác giả: " + book.author;
+      popupPublisher.textContent = "NXB: " + book.publisher;
+      popupPages.textContent = "Số trang: " + book.pages;
+      popupDescription.textContent = book.description;
+
+      downloadBtn.href = book.download;
+      audioBtn.href = book.audio || "#";
+      audioBtn.style.display = book.audio ? "inline-block" : "none";
+
+      popup.classList.add("open");
+      popupContent.classList.remove("zoom-out");
+      popupContent.classList.add("zoom-in");
+    });
+
+    bookList.appendChild(div);
+  });
+
+  // ✅ Scroll chỉ khi render sách xong
+  document.querySelector('.featured').scrollIntoView({ behavior: 'smooth' });
+}
+
+function renderPagination() {
+  pageNumbers.innerHTML = "";
+  const totalPages = Math.ceil(filteredBooks.length / itemsPerPage);
+  for (let i = 1; i <= totalPages; i++) {
+    const btn = document.createElement("button");
+    btn.textContent = i;
+    if (i === currentPage) btn.classList.add("active");
+    btn.addEventListener("click", () => {
+      currentPage = i;
+      updateView();
+    });
+    pageNumbers.appendChild(btn);
+  }
+
+  prevBtn.disabled = currentPage === 1;
+  nextBtn.disabled = currentPage === totalPages;
+}
+
+function updateView() {
+  renderBooks(currentPage);
+  renderPagination();
+}
+
+prevBtn.addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updateView();
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  const totalPages = Math.ceil(filteredBooks.length / itemsPerPage);
+  if (currentPage < totalPages) {
+    currentPage++;
+    updateView();
+  }
+});
+
+// Lọc theo hashtag
+document.querySelectorAll('[data-hashtag]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const tag = link.getAttribute('data-hashtag');
+
+    filteredBooks = allBooks.filter(book =>
+      book.hashtags && book.hashtags.includes(tag)
+    );
+
+    currentPage = 1;
+    updateView();
+  });
+});
+
+// Đóng popup
+modalBg.addEventListener("click", () => {
+  popupContent.classList.remove("zoom-in");
+  popupContent.classList.add("zoom-out");
+  setTimeout(() => {
+    popup.classList.remove("open");
+  }, 300);
+});
+</script>
+
+</body>
+
+</html>
