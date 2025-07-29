@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Giáo trình chuẩn HSK4 (Tập 1)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 280,
+    "description": "Phần đầu của giáo trình HSK4 tập trung nâng cao khả năng sử dụng tiếng Trung trong môi trường học thuật và giao tiếp hàng ngày. Nội dung đa dạng, chủ đề phong phú và có nhiều bài luyện tập đi kèm.",
+    "cover": "assets/img/book-4.jpg",
+    "download": "assets/files/book-4.pdf",
+    "hashtags": ["chuan", "hsktrungcap", "hsk4"],
+    "audio": "assets/audio/book-4.mp3"
+  },
+  {
+    "title": "Sách bài tập HSK4 (Tập 1)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 110,
+    "description": "Sách bài tập cho HSK4 tập 1 giúp người học luyện sâu kỹ năng đọc hiểu và viết luận. Mỗi bài học đi kèm nhiều dạng bài để thực hành toàn diện.",
+    "cover": "assets/img/workbook-4.jpg",
+    "download": "assets/files/workbook-4.pdf",
+    "hashtags": ["baitap", "hsktrungcap", "hsk4"],
+    "audio": "assets/audio/workbook-4.mp3"
+  },
+  {
+    "title": "Giáo trình chuẩn HSK4 (Tập 2)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 285,
+    "description": "Tập hai của HSK4 tiếp tục bổ sung các cấu trúc ngữ pháp nâng cao, các bài nghe nói phân tích chuyên sâu hơn, giúp người học củng cố nền tảng để chuẩn bị cho các kỳ thi trung cấp.",
+    "cover": "assets/img/book-5.jpg",
+    "download": "assets/files/book-5.pdf",
+    "hashtags": ["chuan", "hsktrungcap", "hsk4"],
+    "audio": "assets/audio/book-5.mp3"
+  },
+  {
+    "title": "Sách bài tập HSK4 (Tập 2)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 115,
+    "description": "Sách bài tập tập 2 giúp người học rèn luyện thêm các dạng bài phân tích ngữ nghĩa, viết đoạn văn và luyện nghe theo chủ đề chuyên sâu hơn.",
+    "cover": "assets/img/workbook-5.jpg",
+    "download": "assets/files/workbook-5.pdf",
+    "hashtags": ["baitap", "hsktrungcap", "hsk4"],
+    "audio": "assets/audio/workbook-5.mp3"
+  },
+  {
+    "title": "Giáo trình chuẩn HSK5 (Tập 1)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 310,
+    "description": "Giáo trình HSK5 tập 1 hướng đến người học ở trình độ nâng cao. Nội dung phong phú, từ vựng học thuật, bài đọc dài và bài nghe mang tính thời sự giúp nâng cao toàn diện kỹ năng.",
+    "cover": "assets/img/book-6.jpg",
+    "download": "assets/files/book-6.pdf",
+    "hashtags": ["chuan", "hskcaocap", "hsk5"],
+    "audio": "assets/audio/book-6.mp3"
+  },
+  {
+    "title": "Sách bài tập HSK5 (Tập 1)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 120,
+    "description": "Sách bài tập cung cấp các dạng bài đọc hiểu học thuật, viết đoạn và luyện nghe nâng cao, phù hợp với trình độ HSK5.",
+    "cover": "assets/img/workbook-6.jpg",
+    "download": "assets/files/workbook-6.pdf",
+    "hashtags": ["baitap", "hskcaocap", "hsk5"],
+    "audio": "assets/audio/workbook-6.mp3"
+  },
+  {
+    "title": "Giáo trình chuẩn HSK5 (Tập 2)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 320,
+    "description": "Tập 2 của giáo trình HSK5 tiếp tục phát triển các kỹ năng học thuật, phân tích ngữ pháp chuyên sâu và các bài luyện dịch thực tế. Đây là bước đệm vững chắc cho kỳ thi HSK5.",
+    "cover": "assets/img/book-7.jpg",
+    "download": "assets/files/book-7.pdf",
+    "hashtags": ["chuan", "hskcaocap", "hsk5"],
+    "audio": "assets/audio/book-7.mp3"
+  },
+  {
+    "title": "Sách bài tập HSK5 (Tập 2)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 125,
+    "description": "Tiếp nối tập 1, sách bài tập HSK5 tập 2 gồm các bài nghe dài, bài luận phân tích và đọc hiểu chuyên sâu giúp chuẩn bị kỹ cho kỳ thi.",
+    "cover": "assets/img/workbook-7.jpg",
+    "download": "assets/files/workbook-7.pdf",
+    "hashtags": ["baitap", "hskcaocap", "hsk5"],
+    "audio": "assets/audio/workbook-7.mp3"
+  },
+  {
+    "title": "Giáo trình chuẩn HSK6 (Tập 1)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 340,
+    "description": "HSK6 tập 1 là giáo trình cao cấp nhất, tập trung vào các kỹ năng phân tích và phản biện trong tiếng Trung. Chủ đề học thuật, cấu trúc ngữ pháp phức tạp, và yêu cầu kỹ năng đọc hiểu chuyên sâu.",
+    "cover": "assets/img/book-8.jpg",
+    "download": "assets/files/book-8.pdf",
+    "hashtags": ["chuan", "hskcaocap", "hsk6"],
+    "audio": "assets/audio/book-8.mp3"
+  },
+  {
+    "title": "Sách bài tập HSK6 (Tập 1)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 135,
+    "description": "Sách bài tập HSK6 tập 1 cung cấp bài luyện tập chuyên sâu về dịch thuật, đọc hiểu học thuật, và thuyết trình, dành cho người học ở trình độ cao.",
+    "cover": "assets/img/workbook-8.jpg",
+    "download": "assets/files/workbook-8.pdf",
+    "hashtags": ["baitap", "hskcaocap", "hsk6"],
+    "audio": "assets/audio/workbook-8.mp3"
+  },
+  {
+    "title": "Giáo trình chuẩn HSK6 (Tập 2)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 345,
+    "description": "Tập 2 tiếp tục củng cố khả năng viết luận, dịch thuật và thuyết trình bằng tiếng Trung. Các bài học mang tính học thuật và phân tích sâu sắc, giúp học viên đạt được trình độ tiếng Trung thành thạo.",
+    "cover": "assets/img/book-9.jpg",
+    "download": "assets/files/book-9.pdf",
+    "hashtags": ["chuan", "hskcaocap", "hsk6"],
+    "audio": "assets/audio/book-9.mp3"
+  },
+  {
+    "title": "Sách bài tập HSK6 (Tập 2)",
+    "author": "Khương Lệ Bình",
+    "publisher": "Nhà xuất bản Đại học Ngôn ngữ Bắc Kinh",
+    "pages": 140,
+    "description": "Bài tập HSK6 tập 2 chuyên về luyện dịch chuyên ngành, viết luận nâng cao, và các bài nghe dài mang tính học thuật.",
+    "cover": "assets/img/workbook-9.jpg",
+    "download": "assets/files/workbook-9.pdf",
+    "hashtags": ["baitap", "hskcaocap", "hsk6"],
+    "audio": "assets/audio/workbook-9.mp3"
+  }
+]

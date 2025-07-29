@@ -1,0 +1,1326 @@
+@media (max-width: 299px) {
+  .navbar .logo {
+    font-size: 1rem;
+  }
+  .menu-btn {
+    font-size: 1rem;
+  }
+
+  .parallax, .parallaxab {
+    background: white !important;
+    padding-left: 0;
+    height: auto;
+  }
+
+  .parallax, .parallaxab img {
+    display: none;
+  }
+
+  .parallax .text, .parallaxab .text__ab {
+    position: static;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 {
+    font-size: 2rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 span {
+    font-size: 2.5rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab p {
+    font-size: 1rem;
+  }
+
+  .categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .categories_left,
+  .categories_right {
+    margin: 0 auto; /* căn giữa */
+  }
+
+  .categories_left {
+    order: -1; /* Chuyển lên trên */
+    margin-bottom: 0rem;
+  }
+
+  .categories_left h1 {
+    font-size: 2rem;
+  }
+  .categories_left p {
+    font-size: 1rem;
+  }
+  .categories_right h5,
+  p {
+    font-size: 1rem;
+  }
+
+  .categories_right {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Vẫn chia 3 ô mỗi hàng */
+    gap: 1.2rem; /* Giữ nguyên khoảng cách giữa các ô */
+    justify-items: center;
+  }
+
+  .featured__title {
+    font-size: 2rem;
+  }
+
+  .featured {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  .featured__list {
+    grid-template-columns: repeat(1, 1fr); /* 2 ô mỗi hàng */
+    overflow: hidden;
+  }
+
+  .featured__book:nth-child(n + 7) {
+    display: none;
+  }
+
+  .feedbacks__title {
+    font-size: 1.5rem;
+    margin-top: 5.5rem;
+  }
+
+  .feedbacks__input,
+  .feedbacks__button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .testimonials__container {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__copy {
+    margin-top: 2rem;
+  }
+
+  .nav__actions {
+    font-size: 1rem;
+  }
+
+  .pagination button {
+    padding: 0.4em 0.8em;
+    font-size: 0.9em;
+  }
+
+  .tailieu__home {
+    background: #fff !important;
+    padding-left: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3383e2;
+    padding: 1.5rem;
+  }
+
+  .tailieu__home h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .tailieu__home h2 span {
+    font-size: 2.5rem;
+  }
+
+  .faqs__container {
+    grid-template-columns: 1fr; /* chuyển thành 1 cột */
+    padding-inline: 1rem; /* thêm padding hai bên để đỡ sát mép */
+  }
+
+  .faqs h2 {
+    font-size: 2rem; /* thu nhỏ tiêu đề một chút */
+    margin-bottom: 1.5rem;
+  }
+
+  .faq {
+    padding: 1.5rem; /* giảm padding để gọn hơn trên mobile */
+    gap: 1rem; /* giảm khoảng cách giữa icon và text */
+  }
+
+  .faq h4 {
+    font-size: 0.95rem; /* nhỏ lại một chút cho phù hợp */
+    line-height: 1.8rem;
+  }
+
+  .faq__icon {
+    font-size: 1.1rem;
+  }
+
+  .faq p {
+    font-size: 0.95rem; /* đảm bảo đoạn text dễ đọc */
+  }
+
+  .numbers {
+    padding: 2em 1em; /* giảm padding tổng thể */
+  }
+
+  .numbers > div {
+    max-width: 100%; /* bỏ giới hạn chiều rộng nếu có */
+    grid-template-columns: 1fr;
+    gap: 1em; /* giảm gap mạnh hơn */
+  }
+  .number:not(:last-child)::before {
+    display: none;
+  }
+
+  .number h1 {
+    font-size: 3em;
+  }
+
+  .number p {
+    font-size: 1.5em;
+  } 
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+  /* Điện thoại rất nhỏ */
+  .parallax, .parallaxab {
+    background: white !important;
+    padding-left: 0;
+    height: auto;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+  .menu-btn {
+    font-size: 1.5rem;
+  }
+
+  .parallax, .parallaxab img {
+    display: none;
+  }
+
+  .parallax .text, .parallaxab .text__ab {
+    position: static;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 {
+    font-size: 2rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 span {
+    font-size: 2.5rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab p {
+    font-size: 1rem;
+  }
+
+  .categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .categories_left,
+  .categories_right {
+    margin: 0 auto; /* căn giữa */
+  }
+
+  .categories_left {
+    order: -1; /* Chuyển lên trên */
+    margin-bottom: 0rem;
+  }
+
+  .categories_left h1 {
+    font-size: 2rem;
+  }
+  .categories_left p {
+    font-size: 1rem;
+  }
+  .categories_right h5,
+  p {
+    font-size: 1rem;
+  }
+
+  .categories_right {
+    display: grid;
+    grid-template-columns: 1fr; /* Vẫn chia 3 ô mỗi hàng */
+    gap: 1.2rem; /* Giữ nguyên khoảng cách giữa các ô */
+    justify-items: center;
+  }
+
+  .featured__title {
+    font-size: 2rem;
+  }
+
+  .featured {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  .featured__list {
+    grid-template-columns: repeat(2, 1fr); /* 2 ô mỗi hàng */
+  }
+
+  .feedbacks__title {
+    font-size: 2rem;
+    margin-top: 5.5rem;
+  }
+
+  .feedbacks__input,
+  .feedbacks__button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .testimonials__container {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__copy {
+    margin-top: 2rem;
+  }
+
+  .pagination button {
+    padding: 0.5em 0.9em;
+    font-size: 1em;
+  }
+
+  .tailieu__home {
+    background: #fff !important;
+    padding-left: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3383e2;
+    padding: 1.5rem;
+  }
+
+  .tailieu__home h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .tailieu__home h2 span {
+    font-size: 2.5rem;
+  }
+
+  .faqs__container {
+    grid-template-columns: 1fr; /* chuyển thành 1 cột */
+    padding-inline: 1rem; /* thêm padding hai bên để đỡ sát mép */
+  }
+
+  .faqs h2 {
+    font-size: 2rem; /* thu nhỏ tiêu đề một chút */
+    margin-bottom: 1.5rem;
+  }
+
+  .faq {
+    padding: 1.5rem; /* giảm padding để gọn hơn trên mobile */
+    gap: 1rem; /* giảm khoảng cách giữa icon và text */
+  }
+
+  .faq h4 {
+    font-size: 0.95rem; /* nhỏ lại một chút cho phù hợp */
+    line-height: 1.8rem;
+  }
+
+  .faq__icon {
+    font-size: 1.1rem;
+  }
+
+  .faq p {
+    font-size: 0.95rem; /* đảm bảo đoạn text dễ đọc */
+  }
+
+  .numbers {
+    padding: 2em 1em; /* giảm padding tổng thể */
+  }
+
+  .numbers > div {
+    max-width: 100%; /* bỏ giới hạn chiều rộng nếu có */
+    grid-template-columns: 1fr;
+    gap: 1em; /* giảm gap mạnh hơn */
+  }
+  .number:not(:last-child)::before {
+    display: none;
+  }
+
+  .number h1 {
+    font-size: 3em;
+  }
+
+  .number p {
+    font-size: 1.5em;
+  } 
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+  /* Điện thoại phổ thông */
+  .parallax, .parallaxab {
+    background: white !important;
+    padding-left: 0;
+    height: auto;
+  }
+
+  .parallax, .parallaxab img {
+    display: none;
+  }
+
+  .parallax .text, .parallaxab .text__ab {
+    position: static;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 {
+    font-size: 2.5rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 span {
+    font-size: 3rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab p {
+    font-size: 1rem;
+  }
+
+  .categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .categories_left,
+  .categories_right {
+    margin: 0 auto; /* căn giữa */
+  }
+
+  .categories_left {
+    order: -1; /* Chuyển lên trên */
+    margin-bottom: 0rem;
+  }
+
+  .categories_left h1 {
+    font-size: 2.5rem;
+  }
+  .categories_left p {
+    font-size: 1rem;
+  }
+  .categories_right h5,
+  p {
+    font-size: 1rem;
+  }
+
+  .categories_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Vẫn chia 3 ô mỗi hàng */
+    gap: 1.2rem; /* Giữ nguyên khoảng cách giữa các ô */
+    justify-items: center;
+  }
+
+  .featured__title {
+    font-size: 2.5rem;
+  }
+
+  .featured {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  .featured__list {
+    grid-template-columns: repeat(3, 1fr); /* 2 ô mỗi hàng */
+  }
+
+  .feedbacks__title {
+    font-size: 2rem;
+    margin-top: 5.5rem;
+  }
+
+  .testimonials__container {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__logo {
+    justify-content: center;
+    display: flex;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__copy {
+    margin-top: 2rem;
+  }
+
+  .tailieu__home {
+    background: #fff !important;
+    padding-left: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3383e2;
+    padding: 1.5rem;
+  }
+
+  .tailieu__home h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .tailieu__home h2 span {
+    font-size: 2.5rem;
+  }
+
+  .faqs__container {
+    grid-template-columns: 1fr; /* chuyển thành 1 cột */
+    padding-inline: 1rem; /* thêm padding hai bên để đỡ sát mép */
+  }
+
+  .faqs h2 {
+    font-size: 2rem; /* thu nhỏ tiêu đề một chút */
+    margin-bottom: 1.5rem;
+  }
+
+  .faq {
+    padding: 1.5rem; /* giảm padding để gọn hơn trên mobile */
+    gap: 1rem; /* giảm khoảng cách giữa icon và text */
+  }
+
+  .faq h4 {
+    font-size: 0.95rem; /* nhỏ lại một chút cho phù hợp */
+    line-height: 1.8rem;
+  }
+
+  .faq__icon {
+    font-size: 1.1rem;
+  }
+
+  .faq p {
+    font-size: 0.95rem; /* đảm bảo đoạn text dễ đọc */
+  }
+
+  .numbers {
+    padding: 2em 1em; /* giảm padding tổng thể */
+  }
+
+  .numbers > div {
+    max-width: 100%; /* bỏ giới hạn chiều rộng nếu có */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em; /* giảm gap mạnh hơn */
+  }
+  .number:not(:last-child)::before {
+    display: none;
+  }
+
+  .number h1 {
+    font-size: 3em;
+  }
+
+  .number p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  /* Điện thoại lớn hoặc phablet */
+  .parallax, .parallaxab {
+    background: white !important;
+    padding-left: 0;
+    height: auto;
+  }
+
+  .parallax, .parallaxab img {
+    display: none;
+  }
+
+  .parallax .text, .parallaxab .text__ab {
+    position: static;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 {
+    font-size: 3rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 span {
+    font-size: 4rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab p {
+    font-size: 1rem;
+  }
+
+  .categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .categories_left,
+  .categories_right {
+    margin: 0 auto; /* căn giữa */
+  }
+
+  .categories_left {
+    order: -1; /* Chuyển lên trên */
+    margin-bottom: 0rem;
+  }
+
+  .categories_left h1 {
+    font-size: 3rem;
+  }
+  .categories_left p {
+    font-size: 1rem;
+  }
+  .categories_right h5,
+  p {
+    font-size: 1rem;
+  }
+
+  .categories_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Vẫn chia 3 ô mỗi hàng */
+    gap: 1.2rem; /* Giữ nguyên khoảng cách giữa các ô */
+    justify-items: center;
+  }
+
+  .featured__title {
+    font-size: 3rem;
+  }
+
+  .featured {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  .featured__list {
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden; /* 2 ô mỗi hàng */
+  }
+
+  .featured__book:nth-child(n + 17) {
+    display: none;
+  }
+
+  .testimonials__container {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .tailieu__home {
+    background: #fff !important;
+    padding-left: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3383e2;
+    padding: 1.5rem;
+  }
+
+  .tailieu__home h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .tailieu__home h2 span {
+    font-size: 2.5rem;
+  }
+
+  .faqs__container {
+    grid-template-columns: 1fr 1fr; /* chuyển thành 1 cột */
+    padding-inline: 1rem; /* thêm padding hai bên để đỡ sát mép */
+  }
+
+  .faqs h2 {
+    font-size: 2rem; /* thu nhỏ tiêu đề một chút */
+    margin-bottom: 1.5rem;
+  }
+
+  .faq {
+    padding: 1.5rem; /* giảm padding để gọn hơn trên mobile */
+    gap: 1rem; /* giảm khoảng cách giữa icon và text */
+  }
+
+  .faq h4 {
+    font-size: 0.95rem;
+    line-height: 1.8rem;
+  }
+
+  .faq__icon {
+    font-size: 1.1rem;
+  }
+
+  .faq p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet */
+  .parallax, .parallaxab {
+    height: calc(100vw / 1.95); /* giữ tỉ lệ 1.95:1 */
+    background-size: 100% 100%; /* đảm bảo bg co theo tỉ lệ */
+  }
+
+  .parallax, .parallaxab img {
+    width: 100vw;
+    height: calc(100vw / 1.95);
+  }
+
+  .parallax .text {
+    margin-top: 8rem;
+    left: 0.2rem;
+  }
+
+  .parallaxab .text__ab {
+    padding: 0rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab p {
+    font-size: 0.85rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 {
+    font-size: 2rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 span {
+    font-size: 3rem;
+  }
+
+  .categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .categories_left,
+  .categories_right {
+    margin: 0 auto; /* căn giữa */
+  }
+
+  .categories_left {
+    order: -1; /* Chuyển lên trên */
+    margin-bottom: 0rem;
+  }
+
+  .categories_left h1 {
+    font-size: 3rem;
+  }
+  .categories_left p {
+    font-size: 1rem;
+  }
+  .categories_right h5,
+  p {
+    font-size: 1rem;
+  }
+
+  .categories_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Vẫn chia 3 ô mỗi hàng */
+    gap: 1.2rem; /* Giữ nguyên khoảng cách giữa các ô */
+    justify-items: center;
+  }
+
+  .featured__title {
+    font-size: 3rem;
+  }
+
+  .featured {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  .featured__list {
+    grid-template-columns: repeat(5, 1fr);
+    overflow: hidden; /* 2 ô mỗi hàng */
+  }
+
+  .featured__book:nth-child(n + 16) {
+    display: none;
+  }
+
+  .testimonials__container {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .tailieu__home {
+    height: calc(100vw / 3); /* Tỉ lệ 3:1 */
+    background-size: 100% 100%; /* Ảnh co theo tỉ lệ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    text-align: right;
+    color: #3383e2;
+  }
+
+  .tailieu__home h2 {
+    margin: 0;
+    margin-top: 1rem; /* tương đương margin-top: 8rem trong mẫu parallax nhưng rút gọn theo tỷ lệ */
+    font-size: 2.5rem;
+  }
+
+  .tailieu__home h2 span {
+    font-size: 3rem;
+  }
+
+  .faqs__container {
+    grid-template-columns: 1fr 1fr; /* chuyển thành 1 cột */
+    padding-inline: 1rem; /* thêm padding hai bên để đỡ sát mép */
+  }
+
+  .faqs h2 {
+    font-size: 2rem; /* thu nhỏ tiêu đề một chút */
+    margin-bottom: 1.5rem;
+  }
+
+  .faq {
+    padding: 1.5rem; /* giảm padding để gọn hơn trên mobile */
+    gap: 1rem; /* giảm khoảng cách giữa icon và text */
+  }
+
+  .faq h4 {
+    font-size: 0.95rem; /* nhỏ lại một chút cho phù hợp */
+    line-height: 1.8rem;
+  }
+
+  .faq__icon {
+    font-size: 1.1rem;
+  }
+
+  .faq p {
+    font-size: 0.95rem; /* đảm bảo đoạn text dễ đọc */
+  }
+
+  .popup__content {
+    flex-direction: column;
+    max-height: 90vh;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .popup__content {
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 60vh;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+  }
+
+  .left {
+    width: 100%;
+    max-width: 80vw;
+    aspect-ratio: 1.41 / 1; /* A4 ngang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .left img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.41 / 1;
+    object-fit: cover;
+  }
+
+  .right {
+    width: 90%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Laptop nhỏ hoặc màn hình trung bình */
+  .parallax, .parallaxab {
+    height: calc(100vw / 1.95); /* giữ tỉ lệ 1.95:1 */
+    background-size: 100% 100%; /* đảm bảo bg co theo tỉ lệ */
+  }
+
+  .parallax, .parallaxab img {
+    width: 100vw;
+    height: calc(100vw / 1.95);
+  }
+
+  .parallax .text {
+    margin-top: 9rem;
+    left: 0.3rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab p {
+    font-size: 0.9rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 {
+    font-size: 3rem;
+  }
+
+  .parallax .text, .parallaxab .text__ab h2 span {
+    font-size: 4rem;
+  }
+
+  .categories_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .categories_left,
+  .categories_right {
+    margin: 0 auto; /* căn giữa */
+  }
+
+  .categories_left {
+    order: -1; /* Chuyển lên trên */
+    margin-bottom: 0rem;
+  }
+
+  .categories_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .featured {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  .testimonials__container {
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+  }
+
+  .tailieu__home {
+    height: calc(100vw / 3); /* Tỉ lệ 3:1 */
+    background-size: 100% 100%; /* Ảnh co theo tỉ lệ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    text-align: right;
+    color: #3383e2;
+  }
+
+  .tailieu__home h2 {
+    margin: 0;
+    margin-top: 2rem; /* tương đương margin-top: 8rem trong mẫu parallax nhưng rút gọn theo tỷ lệ */
+    font-size: 3.5rem;
+  }
+
+  .tailieu__home h2 span {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .navbar {
+    padding: 0 1.5em;
+  }
+
+  .dropdown > div,
+  .mega-menu > .link {
+    padding: 1.5em 1em;
+  }
+
+  .mega-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    background-color: #212225;
+    position: absolute;
+    top: 4.3em;
+    left: 0;
+    padding: 0;
+    overflow-y: hidden;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #212225;
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.4s;
+    opacity: 0;
+  }
+
+  .menu > li:last-child a {
+    padding-bottom: 1em;
+  }
+
+  .sub-menu li:first-child {
+    padding-top: 1em;
+  }
+
+  .sub-menu li:last-child {
+    padding-bottom: 0.5em;
+  }
+
+  .menu li a,
+  .menu .sub-dropdown > div {
+    padding: 0.5em 2em;
+  }
+
+  .dropdown,
+  .sub-dropdown {
+    position: relative;
+  }
+
+  .dropdown > div,
+  .mega-menu > .link {
+    transition: 0.3s;
+  }
+
+  .dropdown a {
+    display: block;
+  }
+
+  /*Hide menu*/
+  .menu {
+    height: 0;
+  }
+
+  .sub-dropdown,
+  .menu > .link {
+    padding: 0.5em 0;
+  }
+
+  .dropdown:hover,
+  .link:hover {
+    background-color: #212225;
+  }
+
+  .dropdown:hover .menu {
+    height: auto;
+    padding: 0.5em 0 0 0;
+    overflow-y: visible;
+  }
+
+  .sub-dropdown:hover {
+    background-color: #212225;
+  }
+
+  .sub-dropdown:hover .sub-menu {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 1em 1.5em;
+  }
+
+  .menu-container {
+    background: #212225;
+    position: absolute;
+    top: 4.4em;
+    left: 0;
+    width: 100%;
+    overflow-y: hidden;
+    transition: 0.3s;
+  }
+
+  /* width */
+  .mega-menu::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  .mega-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  .mega-menu::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  .mega-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .mega-menu {
+    padding: 0 1em 1em 1em;
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  .mega-menu li {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .mega-menu li > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .menu li {
+    padding: 0 1em;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .menu a {
+    display: block;
+    margin: 0.8em 0;
+  }
+  .menu {
+    display: none;
+  }
+
+  /*Toggle class for Javascript*/
+  .menu-show {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /*Toggle class for Javascript*/
+  .menu-show {
+    display: block;
+  }
+
+  .dropdown > div,
+  .sub-dropdown > div,
+  .mega-menu > .link {
+    cursor: pointer;
+    padding: 0.5em;
+  }
+
+  .sub-menu {
+    font-size: 0.9em;
+    display: none;
+    position: static;
+  }
+
+  /*Toggle class for Javascript*/
+  .sub-menu-show {
+    display: block;
+  }
+
+  .dropdown:hover > div,
+  .sub-dropdown:hover > div {
+    background: #2d3033;
+    width: 100%;
+  }
+
+  /*Hide menu*/
+  .menu-container {
+    height: 0;
+  }
+
+  /*Toggle class for Javascript*/
+  .mega-menu-show {
+    height: 50vh;
+  }
+
+  .nav__actions {
+    right: 4rem; /* dịch sang trái để không đè nút menu */
+    column-gap: 0.5rem;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .whower {
+    position: relative;
+    height: auto;
+    flex-direction: column; /* xếp dọc lại để chữ đè lên ảnh */
+  }
+
+  .whower img {
+    width: 100%;
+    height: auto; /* giữ nguyên tỷ lệ ảnh */
+    object-fit: contain; /* không bị crop ảnh */
+    display: block;
+    filter: blur(3px);
+  }
+
+  .text__whower {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0); /* nền đen mờ để chữ nổi bật */
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text__whower h2 {
+    font-size: 2.5rem;
+    margin-right: 0;
+  }
+
+  .text__whower p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .whower {
+    margin-top: 2.3rem;
+    margin-bottom: .5rem;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .text__whower h2 {
+    font-size: 2.2rem;
+  }
+
+  .text__whower p {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .whower {
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 815px) {
+.mission__text h2 {
+  font-size: 2.2rem;
+}
+
+.mission__text .subtitle {
+  font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 529px) {
+.mission__text h2 {
+  font-size: 2rem;
+}
+
+.mission__text .subtitle {
+  font-size: 0.9rem;
+}
+}
